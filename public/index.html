@@ -1,19 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="./img/developer.png" type="image/x-icon" size="32x32">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+  <!-- Netlify Identity -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <meta name="google-site-verification" content="UhwWcRVM_ifrmLviOr7ocVbMYYk_FB0ldxDtHT8kNqs" />
+    
+  <title>Jonathan Edwards Tech</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <script src='https://use.fontawesome.com/releases/v5.15.4/js/all.js', crossorigin='anonymous'></script>
+
+  <!-- Custom fonts for this template -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="dist/css/agency.min.css" rel="stylesheet">
+  <link href="dist/css/styles.css" rel="stylesheet">
+  <link href="dist/css/agency.css" rel="stylesheet">
+
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Button used to open the chat form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #555;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 23px;
+      right: 28px;
+      width: 280px;
+    }
+    
+    /* The popup chat - hidden by default */
+    .chat-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    /* Full-width textarea */
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+    
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+    </style>
+
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </head>
-<body>
-      <!-- Navigation -->
+
+<body id="page-top">
+    <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Jonathan C. Edwards</a>
 
         <a class="img-responsive" data-toggle="modal" href="#projectsModal7">
-          <img id="profile-pic" src="img/profile2.jpg" alt="Opps">
+          <img id="profile-pic" src="dist/assets/img/profile2.jpg" alt="Opps">
           <div class="projects-hover">
             <div class="projects-hover-content">
             </div>
@@ -50,8 +173,7 @@
       </div>
     </div>
   </nav>
-
-  <!-- Header -->
+    <!-- Header -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
@@ -69,6 +191,8 @@
       </div>
     </div>
   </header>
+    
+      
 
   <!-- <button class="open-button" onclick="openForm()">Chat (Coming soon!)</button> -->
 
@@ -154,7 +278,7 @@
                 
               </div>
             </div>
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/clients/SaraisSchoolHouse.png" width="800" height="480" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/clients/SaraisSchoolHouse.png" width="800" height="480" alt="">
           </a>
           <div class="projects-caption">
             <br>
@@ -173,7 +297,7 @@
               <div class="projects-hover-content">
               </div>
             </div>
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/clients/johnMorrisRossIV.png" width="800" height="480" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/clients/johnMorrisRossIV.png" width="800" height="480" alt="">
           </a>
           <div class="projects-caption">
             <br>
@@ -197,13 +321,13 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 projects-item">
-          <a class="projects-link" data-toggle="modal" href="#projectsModal1">
+          <a class="projects-link" data-toggle="modal" href="#portfolioModal1">
             <div class="projects-hover">
               <div class="projects-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/felix_hello_world.png" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/felix_hello_world.png" alt="">
           </a>
           <div class="projects-caption">
             <h4>Hello World!</h4>
@@ -217,7 +341,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/BMI.jpg" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/BMI.jpg" alt="">
           </a>
           <div class="projects-caption">
             <h4>BMI Calculator</h4>
@@ -231,7 +355,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/addressBookBlue.jpg" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/addressBookBlue.jpg" alt="">
           </a>
           <div class="projects-caption">
             <h4>Address Book</h4>
@@ -245,7 +369,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/moesTavern_tn.jpg" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/moesTavern_tn.jpg" alt="">
           </a>
           <div class="projects-caption">
             <h4>Moe's Tavern</h4>
@@ -259,7 +383,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/sunrisePress_tn.jpg" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/sunrisePress_tn.jpg" alt="">
           </a>
           <div class="projects-caption">
             <h4>The Sunrise Press</h4>
@@ -273,7 +397,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/carDnd_tn.jpg" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/carDnd_tn.jpg" alt="">
           </a>
           <div class="projects-caption">
             <h4>carDND</h4>
@@ -287,7 +411,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/projects/JsonForm.png" alt="">
+            <img class="img-fluid" src="dist/assets/img/projects/JsonForm.png" alt="">
           </a>
           <div class="projects-caption">
             <h4>Chatstream Forms JSON Creator</h4>
@@ -312,7 +436,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/atari.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="dist/assets/img/about/atari.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -326,7 +450,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/descendents.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="dist/assets/img/about/descendents.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -340,7 +464,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/tour_van.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="dist/assets/img/about/tour_van.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -354,7 +478,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/meatballs.jpg" alt="">
+                <img class="rounded-circle img-fluid" src="dist/assets/img/about/meatballs.jpg" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -368,7 +492,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/coding.png" alt="">
+                <img class="rounded-circle img-fluid" src="dist/assets/img/about/coding.png" alt="">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -411,7 +535,7 @@
 
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/hobbies/ethicalHacking.jpg" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/hobbies/ethicalHacking.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -426,7 +550,7 @@
       <div class="row">
         <div class="col-md-7">
           <a href="https://www.raspberrypi.org/">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/hobbies/raspberry_pi.png" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/hobbies/raspberry_pi.png" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -443,7 +567,7 @@
       <div class="row">
         <div class="col-md-7">
           <a href="https://www.discogs.com/user/jon1969edwards">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/hobbies/vinyl.jpg" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/hobbies/vinyl.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -462,7 +586,7 @@
       <div class="row">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/hobbies/Iot.jpg" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/hobbies/Iot.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -480,7 +604,7 @@
 
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/hobbies/gamer.png" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="dist/assets/img/hobbies/gamer.png" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -507,7 +631,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" style="border:5px solid #67F7C1" src="img/socialMediaLinks.jpg" alt="">
+            <img class="mx-auto rounded-circle" style="border:5px solid #67F7C1" src="dist/assets/img/socialMediaLinks.jpg" alt="">
             <h4>Jon Edwards</h4>
             <p class="text-muted">Junior Full Stack Web Developer</p>
             <ul class="list-inline social-buttons">
@@ -687,310 +811,7 @@
     }
   </script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Jonathan C. Edwards 2021</span>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="https://twitter.com/BovverSkin">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/Jon1969Edwards">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/jonathan-edwards-671094110/">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- projects Modals -->
-
-  <!-- Modal 1 -->
-  <div class="projects-modal modal fade" id="projectsModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Hello World!</h2>
-                <p class="item-intro text-muted">This was my first project/site. Pretty simple stuff but I was proud.</p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/felix_hello_world.png" alt="">
-                <p>Not a very complex site, but it's where I learned to code in HTML for the first time.  I remember adding that photo took forever to figure out.  Once I got the hang of it, I taught myself to add a 'Home' link and had a laugh with the link I chose.</p>
-                <ul class="list-inline">
-                  <li>Date: October 2018</li>
-                  <li>Category: Basic HTML</li>
-                </ul>
-                <a href="https://jon1969edwards.github.io/Jon1969edwards/"> 
-                  <button class="btn btn-primary" type="button">
-                    Hello World!</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div class="projects-modal modal fade" id="projectsModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">BMI Calculator</h2>
-                <p class="item-intro text-muted">A simple BMI calculator written in JavaScript tested with cucumber</p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/putThatCookieDown.png" alt="">
-                <p>This was the first time I got to play with some styling aspect.  Although the styling wasn't done with CSS yet, I learned a lot and even adde a little humor to the site.</p>
-                <ul class="list-inline">
-                  <li>Date: October 2018</li>
-                  <li>Category: JavaScript</li>
-                </ul>
-                <a href="https://jon1969edwards.github.io/BMI_Challenge/"> 
-                  <button class="btn btn-primary" type="button">
-                    BMI Calculator</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 3 -->
-  <div class="projects-modal modal fade" id="projectsModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Address Book</h2>
-                <p class="item-intro text-muted">An address book written in JavaScript using browser local storage for storing contacts and cucumber for testing.</p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/addressBook.jpg" alt="">
-                <p>This was the first time I pair programmed with someone.  It was an interesting project because we got to understand each others strengths and weeknesses. We worked with that knowledge and taught each other a lot.</p>
-                <ul class="list-inline">
-                  <li>Date: November 2018</li>
-                  <li>Category: JavaScript/Pair Programming</li>
-                </ul>
-                <a href="https://gergkllai1.github.io/Adress_book/"> 
-                  <button class="btn btn-primary" type="button">
-                    Address Book</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="projects-modal modal fade" id="projectsModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Moe's Tavern</h2>
-                <p class="item-intro text-muted">A food ordering application written in Ruby on Rails. Designed after The Simpsons "Moe's Tavern".</p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/moesTavern.jpg" alt="">
-                <p>This was the first time working as a team.  We had four on the team and had to come up with a plan together.  I'm very proud of the design we came up with for this one as I did most of the front end planning and work.</p>
-                <ul class="list-inline">
-                  <li>Date: November 2018</li>
-                  <li>Category: Ruby/Ruby on Rails</li>
-                </ul>
-                <a href="https://moestavern.herokuapp.com/"> 
-                  <button class="btn btn-primary" type="button">
-                    Moe's Tavern</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="projects-modal modal fade" id="projectsModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">The Sunrise Press</h2>
-                <p class="item-intro text-muted">This is a news website built on the Ruby on Rails framework. It allows visitors to view both inhouse and sourced news articles.</p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/sunrisePress.jpg" alt="">
-                <p>On this project we learned all about API's, login and logout, subscriptions, Stripe,  so on and so forth.  This was a huge feet for us considering we'd only been doing this for three months.</p>
-                <ul class="list-inline">
-                  <li>Date: January 2018</li>
-                  <li>Category: Ruby on Rails/ Rspec/ Cucumber/ API's</li>
-                </ul>
-                <a href="https://the-sunrise-press.herokuapp.com/"> 
-                  <button class="btn btn-primary" type="button">
-                    The Sunrise Press</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="projects-modal modal fade" id="projectsModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">carDND</h2>
-                <p class="item-intro text-muted">A car sharing service prototype created using Ruby on Rails as full stack framework, cucumber/rspec for testing and tailwind for styling.</p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/carDnd.jpg" alt="">
-                <p></p>
-                <ul class="list-inline">
-                  <li>Date: December 2018</li>
-                  <li>Category: Ruby on Rails/ Cucumber/ rspec</li>
-                </ul>
-                <a href="https://cardreamndrive.herokuapp.com/"> 
-                  <button class="btn btn-primary" type="button">
-                    carDND</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 7 -->
-  <div class="projects-modal modal fade" id="projectsModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Jonathan C. Edwards</h2>
-                <p class="item-intro text-muted"></p>
-                <img class="img-fluid d-block mx-auto" src="img/profile2.jpg" alt="">
-                <p></p>
-                <ul class="list-inline">
-                  <li></li>
-                  <li>Go ahead, send a message.  Ya know you want to.</li>
-                </ul>
-                <a href="#contact"> 
-                  <button class="btn btn-primary" type="button">
-                      Hire Me</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 8 -->
-  <div class="projects-modal modal fade" id="projectsModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Chatstream Forms JSON Creator</h2>
-                <p class="item-intro text-muted"></p>
-                <img class="img-fluid d-block mx-auto" src="img/projects/JsonForm.png" alt="">
-                <p></p>
-                <ul class="list-inline">
-                  <li>Date: March 2021</li>
-                  <li>Category: React/ Yarn/ </li>
-                </ul>
-                <a href="https://jonedwards.tech/chatstreamJsonCreatorForm/"> 
-                  <button class="btn btn-primary" type="button">
-                    Chatstream</button>
-                </a> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <!-- ajax contact form -->
   <!-- <section style="margin-top: 50px;">
     <div class="container">
@@ -1061,5 +882,35 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Jonathan C. Edwards 2021</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/BovverSkin">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/Jon1969Edwards">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/jonathan-edwards-671094110/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

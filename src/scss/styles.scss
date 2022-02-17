@@ -12,11 +12,11 @@
 @import "./global.scss";
 
 // Components
-@import "./components/buttons.scss";
-@import "./components/navbar.scss";
+@import "./src/scss/components/buttons.scss";
+@import "./src/scss/components/navbar.scss";
 
 // Sections
-@import "./sections/masthead.scss";
+@import "./src/scss/sections/masthead.scss";
 @import "./sections/portfolio.scss";
 @import "./sections/timeline.scss";
 @import "./sections/team.scss";

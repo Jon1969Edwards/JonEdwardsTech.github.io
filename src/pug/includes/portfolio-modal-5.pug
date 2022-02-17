@@ -1,25 +1,24 @@
-// Portfolio item 5 modal popup
-#portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-    .modal-dialog
-        .modal-content
-            .close-modal(data-bs-dismiss='modal')
-                img(src='assets/img/close-icon.svg', alt='Close modal')
-            .container
-                .row.justify-content-center
-                    .col-lg-8
-                        .modal-body
-                            // Project details
-                            h2.text-uppercase Project Name
-                            p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                            img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/5.jpg', alt='...')
-                            p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                            ul.list-inline
-                                li
-                                    strong Client:
-                                    | Southwest
-                                li
-                                    strong Category:
-                                    | Website Design
-                            button.btn.btn-primary.btn-xl.text-uppercase(data-bs-dismiss='modal', type='button')
-                                i.fas.fa-times.me-1
-                                | Close Project
+// Modal 5
+#projectsModal5.projects-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+  .modal-dialog
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.mx-auto
+            .modal-body
+              // Project Details Go Here
+              h2.text-uppercase The Sunrise Press
+              p.item-intro.text-muted
+                | This is a news website built on the Ruby on Rails framework. It allows visitors to view both inhouse and sourced news articles.
+              img.img-fluid.d-block.mx-auto(src='dist/assets/img/projects/sunrisePress.jpg' alt='')
+              p
+                | On this project we learned all about API&apos;s, login and logout, subscriptions, Stripe,  so on and so forth.  This was a huge feet for us considering we&apos;d only been doing this for three months.
+              ul.list-inline
+                li Date: January 2018
+                li Category: Ruby on Rails/ Rspec/ Cucumber/ API&apos;s
+              a(href='https://the-sunrise-press.herokuapp.com/')
+                button.btn.btn-primary(type='button')
+                  | The Sunrise Press

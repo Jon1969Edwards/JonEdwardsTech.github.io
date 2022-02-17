@@ -1,401 +1,650 @@
 doctype html
-html(lang='en')
-
-    head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Agency - Start Bootstrap Theme
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.15.4/js/all.js', crossorigin='anonymous')
-
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
-
-    body#page-top
-
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
-            .container
-                a.navbar-brand(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
-                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
-                    i.fas.fa-bars.ms-1
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
-                        li.nav-item
-                            a.nav-link(href='#services') Services
-                        li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
-                        li.nav-item
-                            a.nav-link(href='#about') About
-                        li.nav-item
-                            a.nav-link(href='#team') Team
-                        li.nav-item
-                            a.nav-link(href='#contact') Contact
-        // Masthead
-        header.masthead
-            .container
-                .masthead-subheading Welcome To Our Studio!
-                .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
-
-        // Services
-        section#services.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row.text-center
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 1
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
-
-        // About
-        section#about.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
-
-        // Team
-        section#team.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Our Amazing Team
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-                            h4 Parveen Anand
-                            p.text-muted Lead Designer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-                            h4 Diana Petersen
-                            p.text-muted Lead Marketer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-                            h4 Larry Parker
-                            p.text-muted Lead Developer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-linkedin-in
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
-
-        // Clients
-        div.py-5
-            .container
-                .row.align-items-center
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...')
-
-        // Contact
-        section#contact.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-
-                // * * * * * * * * * * * * * * *
-                // * * SB Forms Contact Form * *
-                // * * * * * * * * * * * * * * *
-
-                // This form is pre-integrated with SB Forms.
-                // To make this form functional, sign up at
-                // https://startbootstrap.com/solution/contact-forms
-                // to get an API token!
-
-                form#contactForm(data-sb-form-api-token='API_TOKEN')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
-
-                                // Name input
-                                input#name.form-control(
-                                    type='text',
-                                    placeholder='Your Name *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='name:required')
-                                    | A name is required.
-
-                            .form-group
-
-                                // Email address input
-                                input#email.form-control(
-                                    type='email',
-                                    placeholder='Your Email *',
-                                    data-sb-validations='required,email'
-                                )
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
-
-                            .form-group.mb-md-0
-
-                                // Phone number input
-                                input#phone.form-control(
-                                    type='tel',
-                                    placeholder='Your Phone *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='phone:required')
-                                    | A phone number is required.
-
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
-
-                                // Message input
-                                textarea#message.form-control(
-                                    placeholder='Your Message *',
-                                    data-sb-validations='required'
-                                )
-                                .invalid-feedback(data-sb-feedback='message:required')
-                                    | A message is required.
-
-                    // Submit success message
-                    //
-                    // This is what your users will see when the form
-                    // has successfully submitted
-
-                    #submitSuccessMessage.d-none
-                        .text-center.text-white.mb-3
-                            .fw-bolder Form submission successful!
-                            | To activate this form, sign up at
-                            br
-                            a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                    // Submit error message
-                    //
-                    // This is what your users will see when there is
-                    // an error submitting the form
-
-                    #submitErrorMessage.d-none
-                        .text-center.text-danger.mb-3 Error sending message!
-
-                    // Submit Button
-                    .text-center
-                        button#submitButton.btn.btn-primary.btn-xl.text-uppercase.disabled(type='submit') Send Message
-
-        // Footer
-        footer.footer.py-4
-            .container
-                .row.align-items-center
-                    .col-lg-4.text-lg-start
-                        | Copyright &copy; Your Website 2021
-                    .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-linkedin-in
-                    .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
-
-        // Portfolio Modals
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  link(rel='shortcut icon' href='./img/developer.png' type='image/x-icon' size='32x32')
+  link(rel='manifest' href='/manifest.json')
+  // reCAPTCHA
+  script(src='https://www.google.com/recaptcha/api.js')
+  // Netlify Identity
+  script(src='https://identity.netlify.com/v1/netlify-identity-widget.js')
+  meta(name='google-site-verification' content='UhwWcRVM_ifrmLviOr7ocVbMYYk_FB0ldxDtHT8kNqs')
+  title Jonathan Edwards Tech
+  // Bootstrap core CSS
+  link(href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+  // Custom fonts for this template
+  link(href='vendor/fontawesome-free/css/all.min.css' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap' rel='stylesheet' type='text/css')
+  // Custom styles for this template
+  link(href='css/agency.min.css' rel='stylesheet')
+  link(href='css/style.css' rel='stylesheet')
+  style.
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    /* Button used to open the chat form - fixed at the bottom of the page */
+    .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    }
+    /* The popup chat - hidden by default */
+    .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    }
+    /* Add styles to the form container */
+    .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    }
+    /* Full-width textarea */
+    .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    }
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    }
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+    background-color: red;
+    }
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    }
+  script.
+    if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+    if (!user) {
+    window.netlifyIdentity.on("login", () => {
+    document.location.href = "/admin/";
+    });
+    }
+    });
+    }
+// Navigation
+nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+  .container
+    a.navbar-brand.js-scroll-trigger(href='#page-top') Jonathan C. Edwards
+    a.img-responsive(data-toggle='modal' href='#projectsModal7')
+      img#profile-pic(src='dist/assets/img/profile2.jpg' alt='Opps')
+      .projects-hover
+        .projects-hover-content
+    button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+      i.fas.fa-bars
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.text-uppercase.ml-auto
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#services') Services
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#clients') Clients
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#projects') Projects
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#about') About
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#hobbies') Hobbies
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#socialmedia') Social Media
+        li.nav-item
+          a.nav-link.js-scroll-trigger(href='#contact') Contact
+// Header
+header.masthead
+  .container
+    .intro-text
+      .intro-lead-in Junior Ethical Hacker / Web Developer
+      br
+      span.intro-text.text-uppercase Metasploit | Hashcat | Malduino/Ducky Script | OSINT
+      br
+      br
+      span.intro-text.text-uppercase HTML/CSS | Bootstrap | JavaScript | React 
+      br
+      span.intro-text.text-uppercase React Native | NodeJS | Ruby | Ruby on Rails
+      br
+      br
+      a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') A little of what I do
+// <button class="open-button" onclick="openForm()">Chat (Coming soon!)</button>
+//
+  <div class="chat-popup" id="myForm">
+  <form href="https://wa.me/46722509969" class="form-container">
+  <h1>Chat</h1>
+  <label for="msg"><b>Message</b></label>
+  <textarea placeholder="Type message.." name="msg" required></textarea>
+  <button type="submit" class="btn">Send</button>
+  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+  </div>
+script.
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  }
+// Services
+section#services.bg-light.page-section
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading.text-uppercase Services
+        h3.section-subheading.text-muted
+    .row.text-center
+      .col-md-4
+        span.fa-stack.fa-4x
+          i.fas.fa-circle.fa-stack-2x.text-primary
+          i.fas.fa-user-secret.fa-stack-1x.fa-inverse
+        h4.service-heading Ethical Hacking
+        p.text-muted
+          | I&apos;ve always had a curiosity about how things work and have taken things apart ever since I was a kid.  I love using that knowledge to make things work in ways they weren&apos;t intended.
+        // <p class="text-muted">"Lets see what this'll do!"  - Me</p>
+      .col-md-4
+        span.fa-stack.fa-4x
+          i.fas.fa-circle.fa-stack-2x.text-primary
+          i.fab.fa-raspberry-pi.fa-stack-1x.fa-inverse
+        h4.service-heading Internet of Things
+        p.text-muted
+          | Oh the satisfaction of telling my tv to turn on and the tv turns on, lights fade and my chosen movie starts.  The future is now.
+        // <p class="text-muted">As with TDD, Agile Development was a huge part of my learning process.  While some may like to make a plan and stick to it, I've got a bit more of a creative mind that likes to tinker and experiment.</p>
+        // <p class="text-muted">"Lets see what this'll do!"  - Me</p>
+      .col-md-4
+        span.fa-stack.fa-4x
+          i.fas.fa-circle.fa-stack-2x.text-primary
+          i.fas.fa-code.fa-stack-1x.fa-inverse
+        h4.service-heading Web Development
+        p.text-muted
+          | Web Development is a skill I&apos;ve learned along the way.  I&apos;ve not only taken a full stack Web Development class but have also interned at a small startup where I learned to code with 3D rendered images.
+        // <p class="text-muted">While just about anyone can create a web page with a bit of HTML and some CSS, it takes a little more time to make sure that site will be useful on a mobile platform as well.</p>
+      .col-md-12
+        br
+        br
+        h2.service-heading &quot;Lets see what this&apos;ll do!&quot;  - Me
+// Clients Grid
+section#clients.bg.page-section
+  .container
+    .row
+      .col-md-12.text-center
+        h2.section-heading.text-uppercase Clients
+        h3.section-subheading.text-muted Clients I&apos;ve done some work for.
+    .row
+      .col-lg-12.text-center
+        a.clients-link(href='https://www.saraisschoolhouse.com/')
+          .projects-hover
+            .projects-hover-content
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/clients/SaraisSchoolHouse.png' width='800' height='480' alt='')
+        .projects-caption
+          br
+          h4 Sarai&rsquo;s Schoolhouse
+          // <h5>[This is currently a 'Work in Progress']</h5>
+          p.text-muted
+            | Sarai is a classically trained, dually credentialed teacher. She guides both new and experienced homeschooling families in designing a homeschool program that embodies their personal educational philosophy.
+    br
+    br
+    br
+    br
+    .row
+      .col-lg-12.text-center
+        a.clients-link(href='https://jon1969edwards.github.io/john-ross-comedy/')
+          .projects-hover
+            .projects-hover-content
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/clients/johnMorrisRossIV.png' width='800' height='480' alt='')
+        .projects-caption
+          br
+          h4 JOHN MORRIS ROSS IV
+          h5 [This is currently a &apos;Work in Progress&apos;]
+          p.text-muted
+            | Comedian John Morris Ross IV has been performing stand up comedy since 2005 at clubs and colleges over the United States.
+// Projects Grid
+section#projects.bg-light.page-section
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading.text-uppercase Past Projects
+        h3.section-subheading.text-muted A few of my past projects from Bootcamp.
+    .row
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal1')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/felix_hello_world.png' alt='')
+        .projects-caption
+          h4 Hello World!
+          p.text-muted This was my first project/site. Pretty simple stuff but I was proud.
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal2')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/BMI.jpg' alt='')
+        .projects-caption
+          h4 BMI Calculator
+          p.text-muted A simple BMI calculator written in JavaScript tested with cucumber
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal3')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/addressBookBlue.jpg' alt='')
+        .projects-caption
+          h4 Address Book
+          p.text-muted
+            | An address book written in JavaScript using browser local storage for storing contacts and cucumber for testing.
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal4')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/moesTavern_tn.jpg' alt='')
+        .projects-caption
+          h4 Moe&apos;s Tavern
+          p.text-muted
+            | A food ordering application written in Ruby on Rails. Designed after The Simpsons &quot;Moe&apos;s Tavern&quot;.
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal5')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/sunrisePress_tn.jpg' alt='')
+        .projects-caption
+          h4 The Sunrise Press
+          p.text-muted
+            | This is a news website built on the Ruby on Rails framework. It allows visitors to view both inhouse and sourced news articles.
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal6')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/carDnd_tn.jpg' alt='')
+        .projects-caption
+          h4 carDND
+          p.text-muted
+            | A car sharing service prototype created using Ruby on Rails as full stack framework, cucumber/rspec for testing and tailwind for styling.
+      .col-md-4.col-sm-6.projects-item
+        a.projects-link(data-toggle='modal' href='#projectsModal8')
+          .projects-hover
+            .projects-hover-content
+              i.fas.fa-plus.fa-3x
+          img.img-fluid(src='dist/assets/img/projects/JsonForm.png' alt='')
+        .projects-caption
+          h4 Chatstream Forms JSON Creator
+          p.text-muted
+// About
+section#about.page-section
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading.text-uppercase About Me
+        h3.section-subheading.text-muted
+          | I was born and raised in northern California near the city of Sacramento. I grew up in a very religious home. Although my family wasn&rsquo;t rich, I had a good childhood with a warm and loving family. It wasn&rsquo;t until 1988 that my world was changed by the words and music of Joe Strummer, Mick Jones, Paul Simon and Topper Headon. At the tender age of 11, my world view was rocked both literally and figuratively by The Clash. While this may not pertain to any job opportunities, I feel this moment in time shaped who I am as a person today and gives me an understanding in culture, style and music. It opened a whole new world to me that I felt compelled to understand and study. In the same way, technology opened up a world that I felt compelled to understand. I remember my father sitting at his Commodore 64 for hours typing in code. I had no idea what he was doing at the time but it sparked a curiosity that exists in me to this day. Wanting to understand and manipulate technology has been a nagging hobby, passion and obsession since I first played &ldquo;Oregon Trail&rdquo;. While I never took coding seriously until later in life, it is still as exciting to me as the first time I heard the lines &ldquo;London calling, to the faraway towns&rdquo;.
+    .row
+      .col-lg-12
+        ul.timeline
+          li
+            .timeline-image
+              img.rounded-circle.img-fluid(src='dist/assets/img/about/atari.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 1977-1988
+                h4.subheading My Humble Beginnings
+              .timeline-body
+                p.text-muted
+                  | One of my earliest memories is my father playing Atari 2600 with me. &apos;Pac-Man&apos;, &apos;Space Invaders&apos;... We even had &apos;E.T. the Extra-Terrestrial&apos; known for contributing to the video game crash of 1983.
+          li.timeline-inverted
+            .timeline-image
+              img.rounded-circle.img-fluid(src='dist/assets/img/about/descendents.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 1988-1999
+                h4.subheading A Punker is Born
+              .timeline-body
+                p.text-muted
+                  | 1988. The discover of skateboarding and punkrock. I&apos;ll never forget flipping through &apos;Thrasher Magazine&apos; and reading about all these underground bands that would soon change my life.  Once I read about &apos;Milo Aukerman&apos;, the singer of &apos;The Descendents&apos;, going to college to study molecular biology.  At that point I knew I didn&apos;t have to live in a gutter to be punk.
+          li
+            .timeline-image
+              img.rounded-circle.img-fluid(src='dist/assets/img/about/tour_van.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 1999-2010
+                h4.subheading Get in the Van
+              .timeline-body
+                p.text-muted
+                  | In the early 2000&apos;s I got to tour the U.S. in a van and grace stages (basements) while singing for a punk band.  Although this didn&apos;t pay the bills, it did give me a hunger to see something other than the sunny California weather.  In 2010 I moved to Frankfurt, Germany where I started my life as a bartender.
+          li.timeline-inverted
+            .timeline-image
+              img.rounded-circle.img-fluid(src='dist/assets/img/about/meatballs.jpg' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 2015-2018
+                h4.subheading Heja Sverige
+              .timeline-body
+                p.text-muted
+                  | After moving back to the states for a bit, I met my &apos;Sambo&apos;.  We decided to move to Sweden in 2015 and have been here since.
+          li
+            .timeline-image
+              img.rounded-circle.img-fluid(src='dist/assets/img/about/coding.png' alt='')
+            .timeline-panel
+              .timeline-heading
+                h4 2018-Now
+                h4.subheading Hello World!
+              .timeline-body
+                p.text-muted
+                  | In 2018 I found out about &apos;Craft Academy Coding Bootcamp&apos; through a colleague at work and decided to take the plunge and enroll. Through all the headaches and frustrations of learning, I feel it has been well worth it.  The more I learn, the more I love it.
+          li.timeline-inverted
+            .timeline-image
+              a.text-muted.js-scroll-trigger(href='#contact')
+                h4
+                  | Be A Part 
+                  br
+                  | Of My 
+                  br
+                  | Story
+// Hobbies
+section#hobbies.bg-light.page-section
+  .container
+    // Page Heading
+    h1.hobbies
+      | My Hobbies and Interests
+      small
+    br
+    // Hobby One
+    .row
+      .col-md-7
+        a(href='#')
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/hobbies/ethicalHacking.jpg' alt='')
+      .col-md-5
+        h3 Ethical Hacking
+        p
+          | &quot;As with everything, this is a learning process.  I&apos;ve taught myself OSINT to Password Cracking.  Using numerous tools (Metasploit, Nmap, Hashcat, BadUSB, etc.) and operating systems (Windows, Linux and MacOS) I&apos;ve become a bit of a hobbyist and would love to turn it into a career.&quot;
+        // <a class="btn btn-primary" href="https://my.playstation.com/profile/BovverSkin2">My Playstation Profile</a>
+    hr
+    // Hobby Two
+    .row
+      .col-md-7
+        a(href='https://www.raspberrypi.org/')
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/hobbies/raspberry_pi.png' alt='')
+      .col-md-5
+        h3 Raspberry Pi
+        p
+          | I love tinkering and experimenting.  Raspberry Pi is perfect for that.  It&apos;s become a hobby of mine just to see what kind of things I can do with it.
+    // /.row
+    hr
+    // Hobby Three
+    .row
+      .col-md-7
+        a(href='https://www.discogs.com/user/jon1969edwards')
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/hobbies/vinyl.jpg' alt='')
+      .col-md-5
+        h3 Record Collecting
+        p
+          | I&apos;ve been a record collector for a long time. There&apos;s no better feeling than finding that rare gem vinyl burried in a second hand store.  Check out my discogs profile as well as a spotify playlist I made.  You can tell a lot about a person based on their music collection.
+        a.btn.btn-primary(href='https://www.discogs.com/user/jon1969edwards')
+          | My Discogs Profile
+    // /.row
+    hr
+    // Hobby Four
+    .row
+      .col-md-7
+        a(href='#')
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/hobbies/Iot.jpg' alt='')
+      .col-md-5
+        h3 Internet of Things
+        p &quot;Alexa, Turn on the TV.&quot;
+        p
+          | Alexa turns on the tv, sound-bar, Nvidia Shield, changes the channel to my favorite, and then dims and colors the Philips Hue lights.  This is magic and I want to learn more!
+    // /.row
+    hr
+    // Hobby Five
+    .row
+      .col-md-7
+        a(href='#')
+          img.img-fluid.rounded.mb-3.mb-md-0(src='dist/assets/img/hobbies/gamer.png' alt='')
+      .col-md-5
+        h3 Gaming
+        p
+          | What can I say about gaming that I haven&apos;t already said?  It&apos;s been a part of my world for as long as I can remember.
+        a.btn.btn-primary(href='https://my.playstation.com/profile/BovverSkin2') My Playstation Profile
+    hr
+// /.container
+// Social Media
+section#socialmedia.page-section
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading.text-uppercase Social Media
+        h3.section-subheading.text-muted Check out some of my social media links:
+    .row
+      .col-sm-12
+        .team-member
+          img.mx-auto.rounded-circle(style='border:5px solid #67F7C1' src='dist/assets/img/socialMediaLinks.jpg' alt='')
+          h4 Jon Edwards
+          p.text-muted Junior Full Stack Web Developer
+          ul.list-inline.social-buttons
+            li.list-inline-item
+              a(href='https://twitter.com/BovverSkin')
+                i.fab.fa-twitter
+            li.list-inline-item
+              a(href='https://www.linkedin.com/in/jonathan-edwards-671094110/')
+                i.fab.fa-linkedin
+            li.list-inline-item
+              a(href='https://github.com/Jon1969Edwards')
+                i.fab.fa-github
+            li.list-inline-item
+              a(href='https://open.spotify.com/playlist/2dIDXdXK08zWyNutNzfnIe')
+                i.fab.fa-spotify
+            li.list-inline-item
+              a(href='https://www.discogs.com/user/jon1969edwards')
+                i.fas.fa-compact-disc
+            li.list-inline-item
+              a(href='https://my.playstation.com/profile/BovverSkin2')
+                i.fab.fa-playstation
+            li.list-inline-item
+              a(href='https://steamcommunity.com/id/jon1969edwards')
+                i.fab.fa-steam
+    .row
+      .col-lg-8.mx-auto.text-center
+        br
+section.bg-white
+  .row
+    // Spotify Playlist
+    .col-lg-8.mx-auto.text-center
+      h1 Playlist
+      br
+      br
+      .embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item(src='https://open.spotify.com/embed/playlist/2dIDXdXK08zWyNutNzfnIe' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; encrypted-media' loading='lazy' allowfullscreen='' style='border:5px solid #67F7C1' allowtransparency='true')
+// Contact
+section#contact.page-section.cta
+  .container
+    .containerContact
+      .col-lg-12.text-center
+        h2.section-heading.text-uppercase
+          | Contact Me
+      .row
+        .col-md-6
+          form#my-form(action='https://formspree.io/f/xyyowedo' method='POST' style='margin-left: 30px; margin-right: 30px;')
+            .form-group
+              input.form-control(placeholder='First Name' type='First Name' name='First Name')
+            .form-group
+              input.form-control(placeholder='Last Name' type='Last Name' name='Last Name')
+            .form-group
+              input.form-control(placeholder='Email' type='email' name='email')
+            .form-group
+              textarea#massage.form-control(type='text' placeholder='Message' required='' cols='30' rows='10' name='message')
+            center
+              .g-recaptcha(data-sitekey='6LeVPX4eAAAAAKm-YA-EXlLy_eYBhM3tbj7QitUZ')
+            br
+            center
+              button#my-form-button.btnContact.btn-infoContact(type='submit' value='Send') Submit
+            p#my-form-status
+        .col-md-1
+        .col-md-5
+          p.icn
+            i.fas.fa-laptop-code
+            |  &nbsp;&nbsp; Jonathan C. Edwards
+          p.icn
+            i.fa.fa-map-marker
+            |  &nbsp;&nbsp; Stockholm, Sweden
+          // <p class="icn"><i class="fa fa-phone"></i> &nbsp;&nbsp;  </p>
+          p.icn
+            i.fa.fa-envelope
+            |  &nbsp;&nbsp; jon@jonedwards.tech
+          hr
+script.
+  window.addEventListener("DOMContentLoaded", function() {
+  // get the form elements defined in your form HTML above
+  var form = document.getElementById("my-form");
+  var button = document.getElementById("my-form-button");
+  var status = document.getElementById("my-form-status");
+  // Success and Error functions for after the form is submitted
+  function success() {
+  form.reset();
+  button.style = "display: none ";
+  status.innerHTML = "Thanks! I'll get back to you as soon as possible.";
+  }
+  function error() {
+  status.innerHTML = "Oops! There was a problem.";
+  }
+  // handle the form submission event
+  form.addEventListener("submit", function(ev) {
+  ev.preventDefault();
+  var data = new FormData(form);
+  ajax(form.method, form.action, data, success, error);
+  });
+  });
+  // helper function for sending an AJAX request
+  function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function() {
+  if (xhr.readyState !== XMLHttpRequest.DONE) return;
+  if (xhr.status === 200) {
+  success(xhr.response, xhr.responseType);
+  } else {
+  error(xhr.status, xhr.response, xhr.responseType);
+  }
+  };
+  xhr.send(data);
+  }
+// Footer
+footer.footer
+  .container
+    .row.align-items-center
+      .col-md-4
+        span.copyright Copyright &copy; Jonathan C. Edwards 2021
+      .col-md-4
+        ul.list-inline.social-buttons
+          li.list-inline-item
+            a(href='https://twitter.com/BovverSkin')
+              i.fab.fa-twitter
+          li.list-inline-item
+            a(href='https://github.com/Jon1969Edwards')
+              i.fab.fa-github
+          li.list-inline-item
+            a(href='https://www.linkedin.com/in/jonathan-edwards-671094110/')
+              i.fab.fa-linkedin-in
+// ajax contact form
+//
+  <section style="margin-top: 50px;">
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-md-8">
+  <div class="card">
+  <h5 class="card-header">Ajax Contact Form</h5>
+  <div class="card-body">
+  <form class="contact__form" method="post" action="mail.php">
+// form message
+//
+  <div class="row">
+  <div class="col-12">
+  <div class="contact__msg" style="display: none">
+  <p>Your message was sent successfully.</p>
+  </div>
+  </div>
+  </div>
+// end message
+// form element
+//
+  <div class="row">
+  <div class="col-md-6 form-group">
+  <input name="name" type="text" class="form-control" placeholder="Name" required>
+  </div>
+  <div class="col-md-6 form-group">
+  <input name="email" type="email" class="form-control" placeholder="Email" required>
+  </div>
+  <div class="col-md-6 form-group">
+  <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+  </div>
+  <div class="col-md-6 form-group">
+  <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+  </div>
+  <div class="col-12 form-group">
+  <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+  </div>
+  <div class="col-12 form-group">
+  <div class="g-recaptcha" data-sitekey="6Ld7RCwaAAAAAFPzvRh2p_s6h9QsQ2bwkP6DI1OJ"></div>
+  </div>
+  <div class="col-12">
+  <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+  </div>
+  </div>
+// end form element
+//
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+// Google reCAPTCHA JavaScript
+//
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="main.js"></script>
+// Bootstrap core JavaScript
+script(src='vendor/jquery/jquery.min.js')
+script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
+// Plugin JavaScript
+script(src='vendor/jquery-easing/jquery.easing.min.js')
+// Contact form JavaScript
+script(src='js/jqBootstrapValidation.js')
+script(src='js/contact_me.js')
+// Custom scripts for this template
+script(src='js/agency.min.js')
