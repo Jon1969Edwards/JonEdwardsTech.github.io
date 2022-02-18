@@ -103,7 +103,7 @@ head
 nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
   .container
     a.navbar-brand.js-scroll-trigger(href='#page-top') Jonathan C. Edwards
-    a.img-responsive(data-toggle='modal' href='#projectsModal7')
+    a.img-responsive(data-toggle='modal' href='#portfolioModal7')
       img#profile-pic(src='dist/assets/img/profile2.jpg' alt='Opps')
       .projects-hover
         .projects-hover-content
@@ -239,7 +239,7 @@ section#projects.bg-light.page-section
         h3.section-subheading.text-muted A few of my past projects from Bootcamp.
     .row
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal1')
+        a.projects-link(data-toggle='modal' href='#portfolioModal1')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -248,7 +248,7 @@ section#projects.bg-light.page-section
           h4 Hello World!
           p.text-muted This was my first project/site. Pretty simple stuff but I was proud.
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal2')
+        a.projects-link(data-toggle='modal' href='#portfolioModal2')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -257,7 +257,7 @@ section#projects.bg-light.page-section
           h4 BMI Calculator
           p.text-muted A simple BMI calculator written in JavaScript tested with cucumber
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal3')
+        a.projects-link(data-toggle='modal' href='#portfolioModal3')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -267,7 +267,7 @@ section#projects.bg-light.page-section
           p.text-muted
             | An address book written in JavaScript using browser local storage for storing contacts and cucumber for testing.
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal4')
+        a.projects-link(data-toggle='modal' href='#portfolioModal4')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -277,7 +277,7 @@ section#projects.bg-light.page-section
           p.text-muted
             | A food ordering application written in Ruby on Rails. Designed after The Simpsons &quot;Moe&apos;s Tavern&quot;.
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal5')
+        a.projects-link(data-toggle='modal' href='#portfolioModal5')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -287,7 +287,7 @@ section#projects.bg-light.page-section
           p.text-muted
             | This is a news website built on the Ruby on Rails framework. It allows visitors to view both inhouse and sourced news articles.
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal6')
+        a.projects-link(data-toggle='modal' href='#portfolioModal6')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -297,7 +297,7 @@ section#projects.bg-light.page-section
           p.text-muted
             | A car sharing service prototype created using Ruby on Rails as full stack framework, cucumber/rspec for testing and tailwind for styling.
       .col-md-4.col-sm-6.projects-item
-        a.projects-link(data-toggle='modal' href='#projectsModal8')
+        a.projects-link(data-toggle='modal' href='#portfolioModal8')
           .projects-hover
             .projects-hover-content
               i.fas.fa-plus.fa-3x
@@ -638,11 +638,22 @@ footer.footer
 //
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="main.js"></script>
-// Bootstrap core JavaScript
-script(src='vendor/jquery/jquery.min.js')
-script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
-// Plugin JavaScript
-script(src='vendor/jquery-easing/jquery.easing.min.js')
+
+// Portfolio Modals
+include includes/portfolio-modal-1
+include includes/portfolio-modal-2
+include includes/portfolio-modal-3
+include includes/portfolio-modal-4
+include includes/portfolio-modal-5
+include includes/portfolio-modal-6
+include includes/portfolio-modal-7
+//- include includes/portfolio-modal-8
+
+// Bootstrap core JS
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+
+// Core theme JS
+script(src='js/scripts.js')
 // Contact form JavaScript
 script(src='js/jqBootstrapValidation.js')
 script(src='js/contact_me.js')

@@ -9,7 +9,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('.src/scss/components/_navbar.scss');
     eleventyConfig.addPassthroughCopy('.src/scss/components/_buttons.scss');
     eleventyConfig.addPassthroughCopy('.src/scss/layout');
-    eleventyConfig.addPassthroughCopy('./dist/assets/img');
+    eleventyConfig.addPassthroughCopy('.public/dist/assets/img');
     eleventyConfig.addPassthroughCopy('./dist/js/scripts.js');
 
     return {
